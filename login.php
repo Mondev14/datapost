@@ -32,14 +32,14 @@ if(mysqli_num_rows($result)==1){
 
 }else{
   echo"<script>alert('ชื่อหรือรหัสผ่านของคุณไม่ถูกต้องง')</script>";
-  header('refresh:0; url=form.php');
+  header('refresh:0; url=index.php');
   
 }
 
 
 
 }else{
-  Header('location:form.php');
+  Header('location:index.php');
   echo"error";
 }
 
