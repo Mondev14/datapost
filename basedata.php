@@ -43,7 +43,7 @@ switch($f){
     break;
     default:
     echo "<script>alert('สถานะของคุณถูกแก้ไข')</script>";
-    header('location:form.php');
+    header('location:index.php');
     break;}
 
 

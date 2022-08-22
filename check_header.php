@@ -2,7 +2,7 @@
 if(!$_SESSION['header_name']){
 
 session_destroy();
-header('location:form.php');
+header('location:index.php');
 }
 
 
