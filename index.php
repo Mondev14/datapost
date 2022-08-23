@@ -1,7 +1,5 @@
 
-<?php
-require('link.php')
-?>
+
 
 
 <!DOCTYPE html>
