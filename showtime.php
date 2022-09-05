@@ -15,6 +15,7 @@ $result=mysqli_query($connect,$time);
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Sarabun:wght@100&display=swap.css">
     <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Sarabun:wght@100&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="showtime.css">
 </head>
@@ -26,18 +27,29 @@ $result=mysqli_query($connect,$time);
 <br>
 <div class="center">
 <form action="showtimeprivate.php" method="post">
-<input type="text" name="datetime" placeholder="วันที่,รหัสพนักงาน,ชื่อ"id=""class="center" onfocus="show(this)">
-<input type="submit" value="ค้นหา">
+<input type="text" name="datetime" placeholder="วันที่,รหัสพนักงาน,ชื่อ"id="search"class="center" onfocus="show(this)">
+
 </form>
 </div>
 <script>
-function show(obj){
-    obj.style.background="white";
-    obj.style.color="black";
-}
+$(function(){
+    $("#search").keyup(function(){
+        let keyword=$("#search").val();
+        $("#show").html('');
+        $.ajax({
+            url:"showtimeprivate.php",
+            method:"POST",
+            data:{key:keyword},
+            success:function(data){
+                $("$show").html(data);
+            }
+        });
+    });
+});
 </script>
 <br>
-
+<div id="show"></div>
+<!-- 
     <div class="scroll">
    <table class="container-fluid">
 <thead >
@@ -67,7 +79,7 @@ function show(obj){
 <?php }?>
 </tbody>
    </table>
-</div>
+</div> -->
 
    <br>
    <p align=center>
