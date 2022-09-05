@@ -1,7 +1,7 @@
 <?php
 require('link.php');
-$datetime= $_POST["datetime"];
-$time="SELECT * FROM regist_time WHERE checktime='$datetime'|| firstname='$datetime'||id='$datetime' ORDER BY t_time DESC";
+$datetime= $_POST["key"];
+$time="SELECT * FROM regist_time WHERE checktime LIKE'%$datetime%'|| firstname LIKE '%$datetime%'||id like '%$datetime%' ORDER BY t_time DESC";
 $result=mysqli_query($connect,$time);
 ?>
 <!DOCTYPE html>
@@ -17,10 +17,7 @@ $result=mysqli_query($connect,$time);
     <title>Document</title>
 </head>
 <body>
-<h1 class="header">ที่ทำการไปรษณีย์อำเภอท่าคันโท</h1>
-    <br>
 
-<h1 class="text-center"id="hh">เวลาการเข้างานรายวัน</h1>
 <br>
 <br>
 <div class="scroll">
