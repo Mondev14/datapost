@@ -9,13 +9,13 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Sarabun:wght@100&display=swap" rel="stylesheet">
     <script src="https://unpkg.com/feather-icons"></script>
-    <link rel="stylesheet" href="index.css">
+<link rel="stylesheet" href="index.css">
 
     <title>Document</title>
 </head>
 <body class="normal" id="body"  >
  <div class="img">
- <img src="img/logopost.png" alt="">
+ <img src="img/logopost.png" alt="" id="img">
  </div>
     <h1>ลงชื่อเข้าใช้</h1>
   <div class="outfrom mt-3" style="width:fit-content;" >
@@ -32,7 +32,7 @@
             <div class="input-group-text">
             <input type="checkbox" name="" id="" class="" onclick="show()">
             </div>
-            <label for="" class="input-group-text"><i data-feather="eye-off"></i></label>
+            <label for="" class="input-group-text"><i data-feather="eye-off" class="eye"></i></label>
         </div>
         <div class="mb-3 text-center">
         <input type="submit" value="ลงชื่อเข้าใช้" class="btn btn-success" name="submit">
