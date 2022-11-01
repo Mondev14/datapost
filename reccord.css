@@ -1,0 +1,31 @@
+*{
+  box-sizing: border-box;
+  font-family: sarabun;
+  
+}
+.part-head{
+  margin-top: 30px;
+}
+h1{
+  color:white;
+}
+#img{
+text-align: center;
+}
+img{
+  width: 150px;
+  height: 150px;
+}
+label[for=""],input[type="file"],input[type="text"],option[value],input[type="file"],input[type="tel"],input[type="mail"]{
+  font-weight: bolder;
+}
+
+
+
+body{
+  background-color: #ff0000;
+}
+.form{
+margin: auto;
+width: 50%;
+}

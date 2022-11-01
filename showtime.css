@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Sarabun:wght@100&display=swap');
+*{
+   box-sizing: border-box;
+   -webkit-box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    
+}
+.header{
+   background-color: #ff0000;
+   font-family: sarabun;
+   font-size:50px;
+   padding-top: 20px;
+   color:white;
+   text-align: center;
+  height: 100px;
+}
+.heading{
+   font-family: sarabun;
+   font-size: 40px;
+   font-weight: bolder;
+   text-align: center;
+}
+.center{
+ text-align: center;
+}
+.scroll{
+   max-height: 230px;
+   overflow-y: scroll;
+  margin-left: 50px;
+  margin-right: 50px;
+  border: 1px solid black;
+  
+}
+
+th{
+   position: sticky;
+   top: 0;
+   background-color: #ff0000;
+   font-family: sarabun;
+   text-align: center;
+   color: white;
+  
+   
+}
+td{
+   font-family: sarabun;
+   text-align: center;
+   font-weight: bolder;
+   
+}
+table tbody tr:nth-child(even){
+   background-color: #ff9494;
+   border-top: 1px solid black;border-bottom: 1px solid black;
+}
+
+
+
+
+
+input[rel=""]{
+   border: 1px solid #ff0000;
+   background-color: #ff0000;
+   color: white;
+   font-size: 15px;
+   font-family: sarabun;
+   font-weight: bolder;
+}
+input[class="center"]{
+   font-size: 15px;
+   font-family: sarabun;
+}
+a{
+   font-size: 40px;
+}
+
+
+
