@@ -3,29 +3,30 @@
   font-family: sarabun;
   
 }
-.part-head{
-  margin-top: 30px;
-}
-h1{
-  color:white;
+body{
+  background-color: #ff0000;
 }
 #img{
-text-align: center;
+  text-align: center;
 }
 img{
   width: 150px;
   height: 150px;
+  margin-top: 20px;
 }
-label[for=""],input[type="file"],input[type="text"],option[value],input[type="file"],input[type="tel"],input[type="mail"]{
+h1{
+  font-weight: bolder;
+  color: white;
+}
+#contain{
+  width: fit-content;
+}
+label[for=""],input[type="file"]{
   font-weight: bolder;
 }
-
-
-
-body{
-  background-color: #ff0000;
+input[type="text"],input[type="tel"],input[type="email"]{
+  font-weight: bolder;
 }
-.form{
-margin: auto;
-width: 50%;
+option{
+  font-weight: bolder;
 }

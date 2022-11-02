@@ -21,8 +21,9 @@
 <div class="part-head">
 <h1 align="center">แบบลงทะเบียนพนักงาน</h1>
 </div>
-<div class="form"  style="width:fit-content;" >
+<div class="form" >
 <form action="basedata.php" method="post">
+<div class="container" id="contain">
 <div class="input-group mt-3 mb-3"  >
 <label for="" id="rc" class="input-group-text">ชื่อผู้ใช้</label>
 <input type="text" name="ID" class="form-control" id=""required>
@@ -78,10 +79,10 @@ function check(){
 <label for="" class="input-group-text">ตำแหน่ง</label>
 <select name="posit" id="" class="form-control" required>
     <option value="---">---</option>
-    <option value="หัวหน้าไปรษณีย์">หัวหน้าไปรษณีย์</option>
-    <option value="พนักงานรับฝากพัสดุและคัดแยก">พนักงานรับฝากพัสดุและคัดแยก</option>
-    <option value="พนักงานนำจ่ายพัสดุ">พนักงานนำจ่ายพัสดุ</option>
-    <option value="นักศึกษาฝึกงาน">นักศึกษาฝึกงาน</option>
+    <option value="หัวหน้าไปรษณีย์" class="value">หัวหน้าไปรษณีย์</option>
+    <option value="พนักงานรับฝากพัสดุและคัดแยก" class="value">พนักงานรับฝากพัสดุและคัดแยก</option>
+    <option value="พนักงานนำจ่ายพัสดุ" class="value">พนักงานนำจ่ายพัสดุ</option>
+    <option value="นักศึกษาฝึกงาน" class="value">นักศึกษาฝึกงาน</option>
     </select>
 </div>
 
@@ -102,6 +103,7 @@ function check(){
 <div class=" mb-3 text-center"  >
 <input type="submit" value="บันทึกข้อมูล"  name="submit" class="btn btn-success ">
 <input type="reset" value="ล้างค่า" class="btn btn-dark text-light">
+</div>
 </div>
 </form>
 </div>
